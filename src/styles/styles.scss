@@ -1,0 +1,40 @@
+@import "./../../node_modules/bootstrap/scss/bootstrap";
+
+* {
+  box-sizing: border-box;
+  color: #2d2d2d;
+}
+
+$container-max-widths: (
+        sm: 540px,
+        md: 540px,
+        lg: 660px,
+        xl: 840px,
+        xxl: 1110px
+);
+
+.container {
+  justify-content: space-between;
+
+  .navbar-brand {
+    display: block;
+  }
+
+  .nav {
+    color: #2d2d2d;
+
+    .nav-item {
+
+      .nav-link {
+
+      }
+    }
+
+  }
+}
+
+.btn-primary {
+  margin-top: 10px;
+  padding: 3px 20px;
+  border-radius: 20px;
+}
