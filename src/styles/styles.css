@@ -8352,9 +8352,19 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important; } }
+@font-face {
+  font-family: 'PT_Sans';
+  font-weight: normal;
+  src: url("../fonts/PT_Sans/PTSans-Regular.ttf"); }
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
+  font-style: normal;
+  font-weight: normal; }
 * {
   box-sizing: border-box;
-  color: #2d2d2d; }
+  font-family: PT_Sans, sans-serif;
+  font-size: 14px; }
 
 .container {
   justify-content: space-between; }
@@ -8362,6 +8372,12 @@ textarea.form-control-lg {
     display: block; }
   .container .nav {
     color: #2d2d2d; }
+
+.container .img {
+  display: block;
+  background: url("../img/logo55.png") no-repeat center;
+  height: 25px;
+  width: 200px; }
 
 .btn-primary {
   margin-top: 10px;

@@ -90,10 +90,11 @@ module.exports = {
             },
             {
                 test: /\.(ico|gif|png|jpg|jpeg|svg)$/,
+                // type: "asset/resource",
                 loader: 'file-loader',
                 options: {
-                    name: 'src/media/[name].[ext]',
-                    publicPath: ''
+                    name: '[name].[ext]',
+                    outputPath: 'src/img/'
                 }
             },
             {
