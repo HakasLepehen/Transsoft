@@ -16,6 +16,7 @@
 
 body {
   background-color: $milk;
+  height: 2000px;
 }
 
 * {
@@ -24,38 +25,66 @@ body {
   font-size: 14px;
 }
 
-$container-max-widths: (
-        sm: 540px,
-        md: 540px,
-        lg: 660px,
-        xl: 840px,
-        xxl: 1110px
-);
-
 .container {
   justify-content: space-between;
 
-  .navbar-brand {
-    display: block;
-  }
+  .navbar {
 
-  .nav {
-    color: #2d2d2d;
 
-    .nav-item {
+    .navbar-brand {
+      display: block;
+    }
 
-      .nav-link {
+    .navbar-toggler {
+      border: 1px solid $blue-custom;
 
+      &:hover {
+        border: 2px solid $blue-custom;
       }
     }
 
+    &-nav {
+      color: #2d2d2d;
+
+      .nav-item {
+
+        .nav-link {
+          color: $gray-custom;
+          font-size: 1.1rem;
+
+          &:hover {
+            color: $blue-custom;
+          }
+        }
+      }
+    }
+
+    .show {
+
+      .navbar-nav {
+
+        .nav-item {
+
+          .nav-link {
+            text-align: end;
+            transition: none;
+          }
+        }
+      }
+    }
   }
 }
 
-#head-container {
-  background-image: url("../img/gears-5193383.svg");
-  height: 800px;
-  width: 100%;
+.container {
+
+  .main-bg {
+    background: top/cover no-repeat url("../img/gears-5193383.svg");
+    overflow-scrolling: auto;
+    //background-size: cover;
+    //background-attachment: scroll;
+    height: 400px;
+    width: 100%;
+  }
 }
 
 

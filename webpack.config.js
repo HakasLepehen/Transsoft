@@ -56,9 +56,9 @@ module.exports = {
     optimization: optimization(),
 
     devServer: {
-        hot: false,
-        liveReload: true,
-        watchContentBase: true,
+        hot: true,
+        // liveReload: true,
+        // watchContentBase: true,
         port: 4200
     },
 
