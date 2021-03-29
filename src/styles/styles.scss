@@ -14,6 +14,10 @@
   font-weight: normal;
 }
 
+body {
+  background-color: $milk;
+}
+
 * {
   box-sizing: border-box;
   font-family: PT_Sans, sans-serif;
@@ -48,13 +52,10 @@ $container-max-widths: (
   }
 }
 
-.container {
-  .img {
-    display: block;
-    background: url("../img/logo55.png") no-repeat center;
-    height: 25px;
-    width: 200px;
-  }
+#head-container {
+  background-image: url("../img/gears-5193383.svg");
+  height: 800px;
+  width: 100%;
 }
 
 
