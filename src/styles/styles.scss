@@ -14,6 +14,20 @@
   font-weight: normal;
 }
 
+@keyframes shadow-animate {
+  0% {
+    text-shadow: 0 0 0 $gray-custom;
+  }
+
+  50% {
+    text-shadow: 0 0 4px $gray-custom;
+  }
+
+  100% {
+    text-shadow: 0 0 0 $gray-custom;
+  }
+}
+
 body {
   background-color: $milk;
   height: 2000px;
@@ -78,15 +92,47 @@ body {
 .container {
 
   .main-bg {
-    background: top/cover no-repeat url("../img/gears-5193383.svg");
-    overflow-scrolling: auto;
-    //background-size: cover;
-    //background-attachment: scroll;
-    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    background-size: 100% auto;
+    height: 500px;
     width: 100%;
+    word-wrap: anywhere;
+    z-index: 0;
+
+    .block {
+      display: flex;
+      margin: 0 auto;
+      max-width: 60%;
+      text-transform: uppercase;
+      z-index: 100;
+
+      &-title {
+        text-align: center;
+        line-height: 48px;
+        color: $dark-custom;
+        font-size: 20px;
+        font-stretch: 200%;
+        font-weight: 700;
+        letter-spacing: 0.5rem;
+        -moz-text-shadow: 0 0 2px $gray-custom;
+        -webkit-text-shadow: 0 0 2px $gray-custom;
+        text-shadow: 0 0 0 $gray-custom;
+        animation: shadow-animate 10s running infinite;
+      }
+    }
   }
 }
 
+section {
+  .container {
+    height: 200px;
+    background-color: black;
+  }
+}
 
 .btn-primary {
   margin-top: 10px;

@@ -8361,6 +8361,13 @@ textarea.form-control-lg {
   src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
   font-style: normal;
   font-weight: normal; }
+@keyframes shadow-animate {
+  0% {
+    text-shadow: 0 0 0 #585b60; }
+  50% {
+    text-shadow: 0 0 4px #585b60; }
+  100% {
+    text-shadow: 0 0 0 #585b60; } }
 body {
   background-color: #f9f9f9;
   height: 2000px; }
@@ -8390,10 +8397,38 @@ body {
     transition: none; }
 
 .container .main-bg {
-  background: top/cover no-repeat url("../img/gears-5193383.svg");
-  overflow-scrolling: auto;
-  height: 400px;
-  width: 100%; }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  background-size: 100% auto;
+  height: 500px;
+  width: 100%;
+  word-wrap: anywhere;
+  z-index: 0; }
+  .container .main-bg .block {
+    display: flex;
+    margin: 0 auto;
+    max-width: 60%;
+    text-transform: uppercase;
+    z-index: 100; }
+    .container .main-bg .block-title {
+      text-align: center;
+      line-height: 48px;
+      color: #34363a;
+      font-size: 20px;
+      font-stretch: 200%;
+      font-weight: 700;
+      letter-spacing: 0.5rem;
+      -moz-text-shadow: 0 0 2px #585b60;
+      -webkit-text-shadow: 0 0 2px #585b60;
+      text-shadow: 0 0 0 #585b60;
+      animation: shadow-animate 10s running infinite; }
+
+section .container {
+  height: 200px;
+  background-color: black; }
 
 .btn-primary {
   margin-top: 10px;
