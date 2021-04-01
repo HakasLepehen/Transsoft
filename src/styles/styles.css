@@ -8370,7 +8370,8 @@ textarea.form-control-lg {
     text-shadow: 0 0 0 #585b60; } }
 body {
   background-color: #f9f9f9;
-  height: 2000px; }
+  height: 2000px;
+  margin: 0; }
 
 * {
   box-sizing: border-box;
@@ -8393,7 +8394,6 @@ body {
       .container .navbar-nav .nav-item .nav-link:hover {
         color: #3d60f4; }
   .container .navbar .show .navbar-nav .nav-item .nav-link {
-    text-align: end;
     transition: none; }
 
 .container .main-bg {
@@ -8429,6 +8429,17 @@ body {
 section .container {
   height: 200px;
   background-color: black; }
+  section .container .row {
+    height: inherit; }
+    section .container .row .grow-business {
+      background-color: white;
+      color: #222222;
+      height: 100%; }
+    section .container .row .advantages {
+      background-color: #3d60f4;
+      color: white;
+      height: 100%;
+      letter-spacing: 1px; }
 
 .btn-primary {
   margin-top: 10px;
