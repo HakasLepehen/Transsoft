@@ -4,12 +4,13 @@
 @font-face {
   font-family: 'PT_Sans';
   font-weight: normal;
-  src: url("../fonts/PT_Sans/PTSans-Regular.ttf");
+  src: url("/src/fonts/PTSans-Regular.ttf");
+  src: url("/src/fonts/PTSans-Regular.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto Condensed';
-  src: url('../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf');
+  src: url('../fonts/RobotoCondensed-Regular.ttf');
   font-style: normal;
   font-weight: normal;
 }
@@ -40,7 +41,7 @@ body {
   font-size: 14px;
 }
 
-.container {
+.container-fluid {
   justify-content: space-between;
 
   .navbar {
@@ -89,7 +90,7 @@ body {
   }
 }
 
-.container {
+.container-fluid {
 
   .main-bg {
     position: relative;
@@ -128,7 +129,8 @@ body {
 }
 
 section {
-  .container {
+
+  .container-fluid {
     height: 200px;
     background-color: black;
 
