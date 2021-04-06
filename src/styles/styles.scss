@@ -1,15 +1,15 @@
-@import "./../../node_modules/bootstrap/scss/bootstrap";
 @import "colors";
+@import "./../../node_modules/bootstrap/scss/bootstrap";
 
 @font-face {
   font-family: 'PT_Sans';
   font-weight: normal;
-  src: url("../fonts/PT_Sans/PTSans-Regular.ttf");
+  src: url("../fonts/PTSans-Regular.ttf");
 }
 
 @font-face {
   font-family: 'Roboto Condensed';
-  src: url('../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf');
+  src: url('../fonts/RobotoCondensed-Regular.ttf');
   font-style: normal;
   font-weight: normal;
 }
@@ -155,10 +155,17 @@ body {
 
     .advantages {
       background-color: $blue-custom;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       color: white;
       height: 100%;
       letter-spacing: 1px;
       padding: 40px 0;
+
+      &-item {
+        padding: 30px;
+      }
     }
   }
 }

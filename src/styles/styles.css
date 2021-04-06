@@ -8355,10 +8355,10 @@ textarea.form-control-lg {
 @font-face {
   font-family: 'PT_Sans';
   font-weight: normal;
-  src: url("../fonts/PT_Sans/PTSans-Regular.ttf"); }
+  src: url("../fonts/PTSans-Regular.ttf"); }
 @font-face {
   font-family: 'Roboto Condensed';
-  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
+  src: url("../fonts/RobotoCondensed-Regular.ttf");
   font-style: normal;
   font-weight: normal; }
 @keyframes shadow-animate {
@@ -8445,10 +8445,15 @@ body {
         word-break: break-all; }
     .section-advantages .row .advantages {
       background-color: #3d60f4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       color: white;
       height: 100%;
       letter-spacing: 1px;
       padding: 40px 0; }
+      .section-advantages .row .advantages-item {
+        padding: 30px; }
 
 .btn-primary {
   margin-top: 10px;
