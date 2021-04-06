@@ -8453,7 +8453,13 @@ body {
       letter-spacing: 1px;
       padding: 40px 0; }
       .section-advantages .row .advantages-item {
+        border: 1px solid black;
+        height: 140px;
         padding: 30px; }
+        .section-advantages .row .advantages-item .item-icon {
+          height: 100%; }
+          .section-advantages .row .advantages-item .item-icon svg {
+            height: 50%; }
 
 .btn-primary {
   margin-top: 10px;
