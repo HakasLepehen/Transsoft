@@ -40,6 +40,7 @@ body {
   font-size: 14px;
 }
 
+//Навигационная панель
 .container {
   justify-content: space-between;
 
@@ -69,6 +70,8 @@ body {
 
           &:hover {
             color: $blue-custom;
+            font-weight: 900;
+            font-size: 1.2rem;
           }
         }
       }
@@ -89,6 +92,7 @@ body {
   }
 }
 
+//Who we are...
 .container {
 
   .main-bg {
@@ -127,29 +131,35 @@ body {
   }
 }
 
-section {
-  .container {
-    height: 200px;
-    background-color: black;
+.section-advantages {
+  background-color: white;
 
-    .row {
-      height: inherit;
+  .row {
+    height: 500px;
 
-      .grow-business {
-        background-color: white;
-        color: $black-custom;
-        height: 100%;
-      }
+    .grow-business {
+      display: flex;
+      margin: auto;
+      color: $black-custom;
+      justify-content: center;
+      //height: 100%;
 
-      .advantages {
-        background-color: $blue-custom;
-        color: white;
-        height: 100%;
-        letter-spacing: 1px;
+      h2 {
+        display: block;
+        max-width: 40%;
+        font-family: "Roboto Condensed", monospace;
+        font-weight: 800;
+        word-break: break-all;
       }
     }
 
-
+    .advantages {
+      background-color: $blue-custom;
+      color: white;
+      height: 100%;
+      letter-spacing: 1px;
+      padding: 40px 0;
+    }
   }
 }
 
