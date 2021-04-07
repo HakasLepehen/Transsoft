@@ -8376,7 +8376,7 @@ body {
 * {
   box-sizing: border-box;
   font-family: PT_Sans, sans-serif;
-  font-size: 14px; }
+  font-size: 16px; }
 
 .container {
   justify-content: space-between; }
@@ -8428,38 +8428,49 @@ body {
       text-shadow: 0 0 0 #585b60;
       animation: shadow-animate 10s running infinite; }
 
-.section-advantages {
-  background-color: white; }
-  .section-advantages .row {
-    height: 500px; }
-    .section-advantages .row .grow-business {
+.section-advantages .row {
+  min-height: 500px; }
+  .section-advantages .row .grow-business {
+    align-content: center;
+    display: flex;
+    margin: auto;
+    color: #222222;
+    justify-content: center;
+    min-height: 250px; }
+    .section-advantages .row .grow-business h2, .section-advantages .row .grow-business .h2 {
+      align-self: center;
+      display: block;
+      max-width: 40%;
+      font-family: "Roboto Condensed", monospace;
+      font-weight: 800;
+      word-break: normal; }
+  .section-advantages .row .advantages {
+    background-color: #3d60f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    height: 100%;
+    letter-spacing: 1px;
+    padding: 40px 0; }
+    .section-advantages .row .advantages-item {
       display: flex;
-      margin: auto;
-      color: #222222;
-      justify-content: center; }
-      .section-advantages .row .grow-business h2, .section-advantages .row .grow-business .h2 {
-        display: block;
-        max-width: 40%;
-        font-family: "Roboto Condensed", monospace;
-        font-weight: 800;
-        word-break: break-all; }
-    .section-advantages .row .advantages {
-      background-color: #3d60f4;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      color: white;
-      height: 100%;
-      letter-spacing: 1px;
-      padding: 40px 0; }
-      .section-advantages .row .advantages-item {
-        border: 1px solid black;
-        height: 140px;
-        padding: 30px; }
-        .section-advantages .row .advantages-item .item-icon {
-          height: 100%; }
-          .section-advantages .row .advantages-item .item-icon svg {
-            height: 50%; }
+      flex-direction: row;
+      justify-content: flex-start;
+      min-height: 140px;
+      padding: 30px; }
+      .section-advantages .row .advantages-item .item-icon {
+        height: 78px; }
+        .section-advantages .row .advantages-item .item-icon .icon {
+          height: 78px;
+          width: 78px;
+          fill: #f9f9f9; }
+          .section-advantages .row .advantages-item .item-icon .icon:hover {
+            fill: black;
+            height: 85px;
+            width: 85px; }
+      .section-advantages .row .advantages-item .item-text {
+        margin: auto auto auto 30px; }
 
 .btn-primary {
   margin-top: 10px;
