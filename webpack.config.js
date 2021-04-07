@@ -65,7 +65,7 @@ module.exports = {
     plugins: [
         new HTMLWebpackPlugin(
             {
-                title: 'Evermix',
+                title: 'Транссофт',
                 template: "./index.html",
                 minify: {
                     collapseWhitespace: !isDev

@@ -1,11 +1,10 @@
-@import "./../../node_modules/bootstrap/scss/bootstrap";
 @import "colors";
+@import "./../../node_modules/bootstrap/scss/bootstrap";
 
 @font-face {
   font-family: 'PT_Sans';
   font-weight: normal;
-  src: url("/src/fonts/PTSans-Regular.ttf");
-  src: url("/src/fonts/PTSans-Regular.ttf") format('truetype');
+  src: url("../fonts/PTSans-Regular.ttf");
 }
 
 @font-face {
@@ -41,7 +40,8 @@ body {
   font-size: 14px;
 }
 
-.container-fluid {
+//Навигационная панель
+.container {
   justify-content: space-between;
 
   .navbar {
@@ -70,6 +70,8 @@ body {
 
           &:hover {
             color: $blue-custom;
+            font-weight: 900;
+            font-size: 1.2rem;
           }
         }
       }
@@ -90,7 +92,8 @@ body {
   }
 }
 
-.container-fluid {
+//Who we are...
+.container {
 
   .main-bg {
     position: relative;
@@ -128,30 +131,52 @@ body {
   }
 }
 
-section {
+.section-advantages {
+  background-color: white;
 
-  .container-fluid {
-    height: 200px;
-    background-color: black;
+  .row {
+    height: 500px;
 
-    .row {
-      height: inherit;
+    .grow-business {
+      display: flex;
+      margin: auto;
+      color: $black-custom;
+      justify-content: center;
+      //height: 100%;
 
-      .grow-business {
-        background-color: white;
-        color: $black-custom;
-        height: 100%;
-      }
-
-      .advantages {
-        background-color: $blue-custom;
-        color: white;
-        height: 100%;
-        letter-spacing: 1px;
+      h2 {
+        display: block;
+        max-width: 40%;
+        font-family: "Roboto Condensed", monospace;
+        font-weight: 800;
+        word-break: break-all;
       }
     }
 
+    .advantages {
+      background-color: $blue-custom;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: white;
+      height: 100%;
+      letter-spacing: 1px;
+      padding: 40px 0;
 
+      &-item {
+        border: 1px solid black;
+        height: 140px;
+        padding: 30px;
+
+        .item-icon {
+          height: 100%;
+
+          svg {
+            height: 50%;
+          }
+        }
+      }
+    }
   }
 }
 
