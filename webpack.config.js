@@ -90,7 +90,7 @@ module.exports = {
                 use: cssLoaders('sass-loader')
             },
             {
-                test: /\.(ico|gif|png|jpg|jpeg|svg)$/,
+                test: /\.(ico|gif|png|jpg|jpeg|svg|webp)$/,
                 // type: "asset/resource",
                 loader: 'file-loader',
                 options: {
@@ -98,6 +98,15 @@ module.exports = {
                     outputPath: 'src/img/'
                 }
             },
+            // {
+            //     test: /\.(jpe?g|png)$/i,
+            //     // type: "asset/resource",
+            //     loader: 'file-loader',
+            //     options: {
+            //         name: '[name].[ext]',
+            //         outputPath: 'src/img/'
+            //     }
+            // },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
                 use: [
