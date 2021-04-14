@@ -47,12 +47,8 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.9.1",
-<<<<<<< HEAD
     "autoprefixer": "^10.2.5",
-    "bootstrap": "^5.0.0-beta3"
-=======
     "bootstrap": "^5.0.0-beta3",
     "imagemin-webp": "^5.1.0"
->>>>>>> 0abe7a9ac908684d473381819bde893738d07c08
   }
 }
