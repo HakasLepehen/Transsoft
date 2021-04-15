@@ -79,6 +79,7 @@ section {
           .nav-link {
             color: $gray-custom;
             font-size: 1.1rem;
+            text-transform: uppercase;
 
             &:hover {
               color: $blue-custom;
@@ -226,21 +227,28 @@ section {
         }
 
         .card-text {
+          color: $gray-custom;
 
           .attention {
             color: $danger;
           }
         }
       }
+
+      &-footer {
+
+        .btn-primary {
+          background-color: $blue-custom;
+          border-radius: 20px;
+          height: 38px;
+          padding: 5px 20px;
+        }
+      }
     }
   }
 }
 
-.btn-primary {
-  margin-top: 10px;
-  padding: 3px 20px;
-  border-radius: 20px;
-}
+
 
 $card-height: 100%;
 

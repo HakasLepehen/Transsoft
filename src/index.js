@@ -6,7 +6,10 @@ import './img/video.webp';
 import './img/autopilot.webp';
 import './img/tahograph.webp';
 import './img/podogrev.webp';
-import './img/iridium.webp'
+import './img/iridium.webp';
+import './img/dopog.webp';
+import './img/train.webp';
+import './img/gbo.webp';
 
 //libraries
 import 'bootstrap';
