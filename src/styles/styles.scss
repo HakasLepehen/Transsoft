@@ -214,69 +214,75 @@ section {
   .container {
     padding-top: 22px;
 
-    .card {
+    .row {
 
-      &:hover {
-        max-height: 250px;
+      .col {
 
-        img {
-          height: 100%;
-        }
-      }
+        .card {
 
-      img {
-        background: rgba(240, 240, 240, 0.7);
-      }
+          &:hover {
+            height: 250px;
+            cursor: pointer;
 
-      &-img-top {
-        width: 100%;
-        height: 250px;
-      }
+            img {
+              height: 100%;
+              filter: blur(5px);
+              opacity: 0.4;
+              transition: 0.2s;
+            }
 
-      &-body {
+            .card-body {
+              display: flex;
+              flex-direction: column;
+              height: 250px;
+              justify-content: space-between;
+              position: relative;
+              top: -90%;
+              transition: top 0.2s ease-in;
 
-        .card-title {
-          font-weight: 600;
-          text-transform: uppercase;
-        }
+              .card-text {
+                display: block;
+              }
 
-        .card-text {
-          color: $gray-custom;
-          display: none;
-
-          .attention {
-            color: $danger;
+              .btn-primary {
+                display: block;
+              }
+            }
           }
-        }
-      }
 
-      &-footer {
-        display: none;
+          img {
+            background: rgba(240, 240, 240, 0.7);
+          }
 
-        .btn-primary {
-          background-color: $blue-custom;
-          border-radius: 20px;
-          height: 38px;
-          padding: 5px 20px;
-        }
-      }
+          &-img-top {
+            width: 100%;
+            height: 250px;
+          }
 
-      &:hover {
-        cursor: pointer;
+          &-body {
 
-        img {
-          filter: blur(5px);
-          opacity: 0.4;
-          transition: .2s;
-        }
 
-        .card-body {
-          position: relative;
-          top: -80%;
-          transition: top 0.2s ease-in;
+            .card-title {
+              font-weight: 600;
+              text-transform: uppercase;
+            }
 
-          .card-title {
+            .card-text {
+              color: $gray-custom;
+              display: none;
 
+              .attention {
+                color: $danger;
+              }
+            }
+
+            .btn-primary {
+              background-color: $blue-custom;
+              border-radius: 20px;
+              display: none;
+              height: 38px;
+              padding: 5px 20px;
+            }
           }
         }
       }
