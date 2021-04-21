@@ -10,6 +10,9 @@ import './img/iridium.webp';
 import './img/dopog.webp';
 import './img/train.webp';
 import './img/gbo.webp';
+import './img/new1.webp';
+import './img/new2.webp';
+import './img/new3.webp';
 
 //libraries
 import 'bootstrap';

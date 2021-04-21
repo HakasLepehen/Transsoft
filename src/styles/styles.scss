@@ -216,9 +216,21 @@ section {
 
     .card {
 
+      &:hover {
+        max-height: 250px;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      img {
+        background: rgba(240, 240, 240, 0.7);
+      }
+
       &-img-top {
-        max-width: 100%;
-        height: auto;
+        width: 100%;
+        height: 250px;
       }
 
       &-body {
@@ -230,6 +242,7 @@ section {
 
         .card-text {
           color: $gray-custom;
+          display: none;
 
           .attention {
             color: $danger;
@@ -238,12 +251,33 @@ section {
       }
 
       &-footer {
+        display: none;
 
         .btn-primary {
           background-color: $blue-custom;
           border-radius: 20px;
           height: 38px;
           padding: 5px 20px;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        img {
+          filter: blur(5px);
+          opacity: 0.4;
+          transition: .2s;
+        }
+
+        .card-body {
+          position: relative;
+          top: -80%;
+          transition: top 0.2s ease-in;
+
+          .card-title {
+
+          }
         }
       }
     }
@@ -257,8 +291,6 @@ section {
 
     .row {
       display: flex;
-      //justify-content: space-between;
-      //margin: 0;
       width: 100%;
 
       .text-center {
