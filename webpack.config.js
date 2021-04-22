@@ -75,7 +75,7 @@ module.exports = {
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(
             {filename: "[name].[contenthash].css"}
-        ),
+        )
     ],
     externalsType: 'script',
 
@@ -98,15 +98,6 @@ module.exports = {
                     outputPath: 'src/img/'
                 }
             },
-            // {
-            //     test: /\.(jpe?g|png)$/i,
-            //     // type: "asset/resource",
-            //     loader: 'file-loader',
-            //     options: {
-            //         name: '[name].[ext]',
-            //         outputPath: 'src/img/'
-            //     }
-            // },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
                 use: [
@@ -114,7 +105,7 @@ module.exports = {
                         loader: "file-loader",
                         options: {
                             name: '[name].[ext]',
-                            outputPath: '/src/fonts/'
+                            outputPath: 'src/fonts/'
                         }
                     }
                 ],
