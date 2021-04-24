@@ -1,4 +1,4 @@
-@import "colors";
+@import "colors-&-mixins";
 @import "./../../node_modules/bootstrap/scss/bootstrap";
 
 @font-face {
@@ -212,7 +212,7 @@ section {
 .services {
 
   .container {
-    padding-top: 22px;
+    padding: 22px 0;
 
     .row {
 
@@ -251,11 +251,8 @@ section {
             }
 
             .btn-primary {
-              background-color: $blue-custom;
-              border-radius: 20px;
+              @include custom-btn;
               display: none;
-              height: 38px;
-              padding: 5px 20px;
             }
           }
 
@@ -347,11 +344,8 @@ section {
           word-wrap: break-word;
 
           .btn-primary {
-            background-color: $blue-custom;
-            border-radius: 20px;
+            @include custom-btn;
             display: none;
-            height: 38px;
-            padding: 5px 20px;
           }
         }
       }
@@ -359,11 +353,32 @@ section {
   }
 }
 
-#map {
-  height: 400px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
+.contacts {
+
+  .container {
+    padding: 22px 0;
+    background-color: #0a53be;
+
+    .row {
+
+      .col {
+        background-color: yellow;
+        border: 1px solid black;
+        min-height: 400px;
+
+        #feedback {
+
+          .row {}
+
+          .form-group {}
+
+          .btn-primary {
+            @include custom-btn;
+          }
+        }
+      }
+    }
+  }
 }
 
 

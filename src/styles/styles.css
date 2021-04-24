@@ -8484,7 +8484,7 @@ section {
         margin: auto auto auto 30px; }
 
 .services .container {
-  padding-top: 22px; }
+  padding: 22px 0; }
   .services .container .row .col .card {
     height: 250px;
     cursor: pointer; }
@@ -8512,9 +8512,9 @@ section {
       .services .container .row .col .card-body .btn-primary {
         background-color: #3d60f4;
         border-radius: 20px;
-        display: none;
         height: 38px;
-        padding: 5px 20px; }
+        padding: 5px 20px;
+        display: none; }
     .services .container .row .col .card:hover .card-body {
       background: none;
       color: #585b60;
@@ -8569,15 +8569,22 @@ section {
         .news .container .row .text-center .news-title .btn-primary {
           background-color: #3d60f4;
           border-radius: 20px;
-          display: none;
           height: 38px;
-          padding: 5px 20px; }
+          padding: 5px 20px;
+          display: none; }
 
-#map {
-  height: 400px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */ }
+.contacts .container {
+  padding: 22px 0;
+  background-color: #0a53be; }
+  .contacts .container .row .col {
+    background-color: yellow;
+    border: 1px solid black;
+    min-height: 400px; }
+    .contacts .container .row .col #feedback .btn-primary {
+      background-color: #3d60f4;
+      border-radius: 20px;
+      height: 38px;
+      padding: 5px 20px; }
 
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)

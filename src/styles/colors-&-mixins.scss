@@ -1,0 +1,12 @@
+$blue-custom: #3d60f4;
+$gray-custom: #585b60;
+$black-custom: #222222;
+$milk: #f9f9f9;
+$dark-custom: #34363a;
+
+@mixin custom-btn() {
+  background-color: $blue-custom;
+  border-radius: 20px;
+  height: 38px;
+  padding: 5px 20px;
+}

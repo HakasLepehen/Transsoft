@@ -47,6 +47,9 @@ console.log('IsDev:', isDev);
 module.exports = {
     context: path.resolve(__dirname),
     entry: path.join(__dirname, "src", "index.js"),
+    experiments: {
+        topLevelAwait: true
+    },
     output:
         {
             filename: "[name].[contenthash].js",
