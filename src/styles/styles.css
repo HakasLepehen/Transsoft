@@ -8500,7 +8500,6 @@ section {
       flex-direction: column;
       justify-content: space-between;
       left: 0;
-      pointer-events: none;
       position: absolute;
       width: 100%; }
       .services .container .row .col .card-body .card-title {
@@ -8579,12 +8578,19 @@ section {
   .contacts .container .row .col {
     background-color: yellow;
     border: 1px solid black;
-    min-height: 400px; }
-    .contacts .container .row .col #feedback .btn-primary {
-      background-color: #3d60f4;
-      border-radius: 20px;
-      height: 38px;
-      padding: 5px 20px; }
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contacts .container .row .col #feedback {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .contacts .container .row .col #feedback .btn-primary {
+        background-color: #3d60f4;
+        border-radius: 20px;
+        height: 38px;
+        padding: 5px 20px; }
 
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)

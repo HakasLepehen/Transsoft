@@ -18,4 +18,14 @@ import './img/new3.webp';
 import 'bootstrap';
 import '@popperjs/core';
 
+window.onload = function () {
+    let btn = document.querySelectorAll('.card');
+    btn.forEach((el) => {
+        el.addEventListener('click', (e) => {
+            console.log('Нажато:', e.target);
+        })
+    })
+
+}
+
 

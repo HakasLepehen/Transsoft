@@ -236,7 +236,6 @@ section {
             flex-direction: column;
             justify-content: space-between;
             left: 0;
-            pointer-events: none;
             position: absolute;
             width: 100%;
 
@@ -365,8 +364,15 @@ section {
         background-color: yellow;
         border: 1px solid black;
         min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         #feedback {
+          display: flex;
+          //height: 100%;
+          flex-direction: column;
+          justify-content: space-between;
 
           .row {}
 
