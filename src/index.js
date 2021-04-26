@@ -13,6 +13,7 @@ import './img/gbo.webp';
 import './img/new1.webp';
 import './img/new2.webp';
 import './img/new3.webp';
+import './img/map-marker.svg'
 
 //libraries
 import 'bootstrap';

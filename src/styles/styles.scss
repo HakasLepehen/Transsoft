@@ -30,7 +30,6 @@
 
 body {
   background-color: $milk;
-  height: 5000px;
   margin: 0;
   overflow-x: hidden;
 }
@@ -38,7 +37,7 @@ body {
 * {
   box-sizing: border-box;
   font-family: PT_Sans, sans-serif;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 h2 {
@@ -356,30 +355,59 @@ section {
 
   .container {
     padding: 22px 0;
-    background-color: #0a53be;
 
     .row {
 
       .col {
-        background-color: yellow;
-        border: 1px solid black;
         min-height: 400px;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 2rem 3rem;
 
-        #feedback {
+        #feedback, &-wrapper {
           display: flex;
-          //height: 100%;
+          height: 100%;
           flex-direction: column;
           justify-content: space-between;
 
-          .row {}
+          .row {
+          }
 
-          .form-group {}
+          .form-group {
+          }
 
           .btn-primary {
             @include custom-btn;
+          }
+
+          .contacts-list {
+            height: 60%;
+            display: inherit;
+            flex-direction: column;
+            justify-content: space-between;
+            color: $gray-custom;
+
+            .map, .mail, .phone {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+
+              .lni-map-marker, .mail-marker, .phone-marker {
+                display: inherit;
+                height: 40px;
+                width: 40px;
+                background-color: $blue-custom;
+                border-radius: 5px;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                  height: 20px;
+                  width: 20px;
+                }
+              }
+            }
           }
         }
       }
@@ -387,6 +415,18 @@ section {
   }
 }
 
+.sticky-bottom {
+
+  .navbar {
+
+    .container-fluid {
+
+      .prod {
+        color: white;
+      }
+    }
+  }
+}
 
 $card-height: 100%;
 

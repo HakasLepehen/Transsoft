@@ -8370,14 +8370,13 @@ textarea.form-control-lg {
     text-shadow: 0 0 0 #585b60; } }
 body {
   background-color: #f9f9f9;
-  height: 5000px;
   margin: 0;
   overflow-x: hidden; }
 
 * {
   box-sizing: border-box;
   font-family: PT_Sans, sans-serif;
-  font-size: 16px; }
+  font-size: 1em; }
 
 h2, .h2 {
   text-align: center;
@@ -8573,24 +8572,47 @@ section {
           display: none; }
 
 .contacts .container {
-  padding: 22px 0;
-  background-color: #0a53be; }
+  padding: 22px 0; }
   .contacts .container .row .col {
-    background-color: yellow;
-    border: 1px solid black;
     min-height: 400px;
     display: flex;
     justify-content: center;
-    align-items: center; }
-    .contacts .container .row .col #feedback {
+    align-items: center;
+    padding: 2rem 3rem; }
+    .contacts .container .row .col #feedback, .contacts .container .row .col-wrapper {
       display: flex;
+      height: 100%;
       flex-direction: column;
       justify-content: space-between; }
-      .contacts .container .row .col #feedback .btn-primary {
+      .contacts .container .row .col #feedback .btn-primary, .contacts .container .row .col-wrapper .btn-primary {
         background-color: #3d60f4;
         border-radius: 20px;
         height: 38px;
         padding: 5px 20px; }
+      .contacts .container .row .col #feedback .contacts-list, .contacts .container .row .col-wrapper .contacts-list {
+        height: 60%;
+        display: inherit;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #585b60; }
+        .contacts .container .row .col #feedback .contacts-list .map, .contacts .container .row .col #feedback .contacts-list .mail, .contacts .container .row .col #feedback .contacts-list .phone, .contacts .container .row .col-wrapper .contacts-list .map, .contacts .container .row .col-wrapper .contacts-list .mail, .contacts .container .row .col-wrapper .contacts-list .phone {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          .contacts .container .row .col #feedback .contacts-list .map .lni-map-marker, .contacts .container .row .col #feedback .contacts-list .map .mail-marker, .contacts .container .row .col #feedback .contacts-list .map .phone-marker, .contacts .container .row .col #feedback .contacts-list .mail .lni-map-marker, .contacts .container .row .col #feedback .contacts-list .mail .mail-marker, .contacts .container .row .col #feedback .contacts-list .mail .phone-marker, .contacts .container .row .col #feedback .contacts-list .phone .lni-map-marker, .contacts .container .row .col #feedback .contacts-list .phone .mail-marker, .contacts .container .row .col #feedback .contacts-list .phone .phone-marker, .contacts .container .row .col-wrapper .contacts-list .map .lni-map-marker, .contacts .container .row .col-wrapper .contacts-list .map .mail-marker, .contacts .container .row .col-wrapper .contacts-list .map .phone-marker, .contacts .container .row .col-wrapper .contacts-list .mail .lni-map-marker, .contacts .container .row .col-wrapper .contacts-list .mail .mail-marker, .contacts .container .row .col-wrapper .contacts-list .mail .phone-marker, .contacts .container .row .col-wrapper .contacts-list .phone .lni-map-marker, .contacts .container .row .col-wrapper .contacts-list .phone .mail-marker, .contacts .container .row .col-wrapper .contacts-list .phone .phone-marker {
+            display: inherit;
+            height: 40px;
+            width: 40px;
+            background-color: #3d60f4;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center; }
+            .contacts .container .row .col #feedback .contacts-list .map .lni-map-marker svg, .contacts .container .row .col #feedback .contacts-list .map .mail-marker svg, .contacts .container .row .col #feedback .contacts-list .map .phone-marker svg, .contacts .container .row .col #feedback .contacts-list .mail .lni-map-marker svg, .contacts .container .row .col #feedback .contacts-list .mail .mail-marker svg, .contacts .container .row .col #feedback .contacts-list .mail .phone-marker svg, .contacts .container .row .col #feedback .contacts-list .phone .lni-map-marker svg, .contacts .container .row .col #feedback .contacts-list .phone .mail-marker svg, .contacts .container .row .col #feedback .contacts-list .phone .phone-marker svg, .contacts .container .row .col-wrapper .contacts-list .map .lni-map-marker svg, .contacts .container .row .col-wrapper .contacts-list .map .mail-marker svg, .contacts .container .row .col-wrapper .contacts-list .map .phone-marker svg, .contacts .container .row .col-wrapper .contacts-list .mail .lni-map-marker svg, .contacts .container .row .col-wrapper .contacts-list .mail .mail-marker svg, .contacts .container .row .col-wrapper .contacts-list .mail .phone-marker svg, .contacts .container .row .col-wrapper .contacts-list .phone .lni-map-marker svg, .contacts .container .row .col-wrapper .contacts-list .phone .mail-marker svg, .contacts .container .row .col-wrapper .contacts-list .phone .phone-marker svg {
+              height: 20px;
+              width: 20px; }
+
+.sticky-bottom .navbar .container-fluid .prod, .sticky-bottom .navbar .container-sm .prod, .sticky-bottom .navbar .container-md .prod, .sticky-bottom .navbar .container-lg .prod, .sticky-bottom .navbar .container-xl .prod, .sticky-bottom .navbar .container-xxl .prod {
+  color: white; }
 
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
