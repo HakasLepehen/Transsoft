@@ -29,7 +29,6 @@
 }
 
 body {
-  background-color: $milk;
   margin: 0;
   overflow-x: hidden;
 }
@@ -48,6 +47,10 @@ h2 {
 
 section {
   margin-top: 30px;
+
+  &:nth-of-type(2n) {
+    background-color: $milk;
+  }
 }
 
 //Навигационная панель
@@ -108,37 +111,40 @@ section {
 }
 
 //Who we are...
-.container {
+.main-title {
 
-  .main-bg {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    height: 500px;
-    width: 100%;
-    word-wrap: anywhere;
+  .container {
 
-    .block {
+    .main-bg {
+      position: relative;
       display: flex;
-      margin: 0 auto;
-      max-width: 60%;
-      text-transform: uppercase;
-      z-index: 100;
+      justify-content: center;
+      flex-direction: column;
+      align-content: center;
+      height: 500px;
+      width: 100%;
+      word-wrap: anywhere;
 
-      &-title {
-        text-align: center;
-        line-height: 48px;
-        color: $dark-custom;
-        font-size: 19px;
-        font-stretch: 200%;
-        font-weight: 700;
-        letter-spacing: 0.5rem;
-        -moz-text-shadow: 0 0 2px $gray-custom;
-        -webkit-text-shadow: 0 0 2px $gray-custom;
-        text-shadow: 0 0 0 $gray-custom;
-        animation: shadow-animate 10s running infinite;
+      .block {
+        display: flex;
+        margin: 0 auto;
+        max-width: 60%;
+        text-transform: uppercase;
+        z-index: 100;
+
+        &-title {
+          text-align: center;
+          line-height: 48px;
+          color: $dark-custom;
+          font-size: 19px;
+          font-stretch: 200%;
+          font-weight: 700;
+          letter-spacing: 0.5rem;
+          -moz-text-shadow: 0 0 2px $gray-custom;
+          -webkit-text-shadow: 0 0 2px $gray-custom;
+          text-shadow: 0 0 0 $gray-custom;
+          animation: shadow-animate 10s running infinite;
+        }
       }
     }
   }
@@ -190,18 +196,19 @@ section {
             height: 78px;
             width: 78px;
             fill: $milk;
-
-            &:hover {
-              fill: black;
-              height: 85px;
-              width: 85px;
-              transition: fill 0.5s;
-            }
           }
         }
 
         .item-text {
           margin: auto auto auto 30px;
+        }
+
+
+        &:hover {
+
+          .icon {
+            transform: scale3d(1.2, 1.2, 1.2);
+          }
         }
       }
     }
@@ -364,6 +371,7 @@ section {
         justify-content: center;
         align-items: center;
         padding: 2rem 3rem;
+        //opacity: 0;
 
         #feedback, &-wrapper {
           display: flex;
@@ -402,6 +410,11 @@ section {
                 justify-content: center;
                 align-items: center;
 
+                &:hover {
+                  cursor: pointer;
+                  transform: scale3d(1.2, 1.2, 1.2);
+                }
+
                 svg {
                   height: 20px;
                   width: 20px;
@@ -415,6 +428,13 @@ section {
   }
 }
 
+#map {
+
+  .popupSonar {
+    background-color: rgba(61, 96, 244, 0.5);
+  }
+}
+
 .sticky-bottom {
 
   .navbar {
@@ -423,6 +443,7 @@ section {
 
       .prod {
         color: white;
+        font-size: 10px;
       }
     }
   }

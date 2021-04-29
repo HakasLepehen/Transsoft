@@ -8369,7 +8369,6 @@ textarea.form-control-lg {
   100% {
     text-shadow: 0 0 0 #585b60; } }
 body {
-  background-color: #f9f9f9;
   margin: 0;
   overflow-x: hidden; }
 
@@ -8385,6 +8384,8 @@ h2, .h2 {
 
 section {
   margin-top: 30px; }
+  section:nth-of-type(2n) {
+    background-color: #f9f9f9; }
 
 .navigation {
   background-color: #f9f9f9;
@@ -8410,7 +8411,7 @@ section {
     .navigation .container .navbar .show .navbar-nav .nav-item .nav-link {
       transition: none; }
 
-.container .main-bg {
+.main-title .container .main-bg {
   position: relative;
   display: flex;
   justify-content: center;
@@ -8419,13 +8420,13 @@ section {
   height: 500px;
   width: 100%;
   word-wrap: anywhere; }
-  .container .main-bg .block {
+  .main-title .container .main-bg .block {
     display: flex;
     margin: 0 auto;
     max-width: 60%;
     text-transform: uppercase;
     z-index: 100; }
-    .container .main-bg .block-title {
+    .main-title .container .main-bg .block-title {
       text-align: center;
       line-height: 48px;
       color: #34363a;
@@ -8474,13 +8475,10 @@ section {
           height: 78px;
           width: 78px;
           fill: #f9f9f9; }
-          .section-advantages .row .advantages-item .item-icon .icon:hover {
-            fill: black;
-            height: 85px;
-            width: 85px;
-            transition: fill 0.5s; }
       .section-advantages .row .advantages-item .item-text {
         margin: auto auto auto 30px; }
+      .section-advantages .row .advantages-item:hover .icon {
+        transform: scale3d(1.2, 1.2, 1.2); }
 
 .services .container {
   padding: 22px 0; }
@@ -8607,12 +8605,19 @@ section {
             border-radius: 5px;
             justify-content: center;
             align-items: center; }
+            .contacts .container .row .col #feedback .contacts-list .map .lni-map-marker:hover, .contacts .container .row .col #feedback .contacts-list .map .mail-marker:hover, .contacts .container .row .col #feedback .contacts-list .map .phone-marker:hover, .contacts .container .row .col #feedback .contacts-list .mail .lni-map-marker:hover, .contacts .container .row .col #feedback .contacts-list .mail .mail-marker:hover, .contacts .container .row .col #feedback .contacts-list .mail .phone-marker:hover, .contacts .container .row .col #feedback .contacts-list .phone .lni-map-marker:hover, .contacts .container .row .col #feedback .contacts-list .phone .mail-marker:hover, .contacts .container .row .col #feedback .contacts-list .phone .phone-marker:hover, .contacts .container .row .col-wrapper .contacts-list .map .lni-map-marker:hover, .contacts .container .row .col-wrapper .contacts-list .map .mail-marker:hover, .contacts .container .row .col-wrapper .contacts-list .map .phone-marker:hover, .contacts .container .row .col-wrapper .contacts-list .mail .lni-map-marker:hover, .contacts .container .row .col-wrapper .contacts-list .mail .mail-marker:hover, .contacts .container .row .col-wrapper .contacts-list .mail .phone-marker:hover, .contacts .container .row .col-wrapper .contacts-list .phone .lni-map-marker:hover, .contacts .container .row .col-wrapper .contacts-list .phone .mail-marker:hover, .contacts .container .row .col-wrapper .contacts-list .phone .phone-marker:hover {
+              cursor: pointer;
+              transform: scale3d(1.2, 1.2, 1.2); }
             .contacts .container .row .col #feedback .contacts-list .map .lni-map-marker svg, .contacts .container .row .col #feedback .contacts-list .map .mail-marker svg, .contacts .container .row .col #feedback .contacts-list .map .phone-marker svg, .contacts .container .row .col #feedback .contacts-list .mail .lni-map-marker svg, .contacts .container .row .col #feedback .contacts-list .mail .mail-marker svg, .contacts .container .row .col #feedback .contacts-list .mail .phone-marker svg, .contacts .container .row .col #feedback .contacts-list .phone .lni-map-marker svg, .contacts .container .row .col #feedback .contacts-list .phone .mail-marker svg, .contacts .container .row .col #feedback .contacts-list .phone .phone-marker svg, .contacts .container .row .col-wrapper .contacts-list .map .lni-map-marker svg, .contacts .container .row .col-wrapper .contacts-list .map .mail-marker svg, .contacts .container .row .col-wrapper .contacts-list .map .phone-marker svg, .contacts .container .row .col-wrapper .contacts-list .mail .lni-map-marker svg, .contacts .container .row .col-wrapper .contacts-list .mail .mail-marker svg, .contacts .container .row .col-wrapper .contacts-list .mail .phone-marker svg, .contacts .container .row .col-wrapper .contacts-list .phone .lni-map-marker svg, .contacts .container .row .col-wrapper .contacts-list .phone .mail-marker svg, .contacts .container .row .col-wrapper .contacts-list .phone .phone-marker svg {
               height: 20px;
               width: 20px; }
 
+#map .popupSonar {
+  background-color: rgba(61, 96, 244, 0.5); }
+
 .sticky-bottom .navbar .container-fluid .prod, .sticky-bottom .navbar .container-sm .prod, .sticky-bottom .navbar .container-md .prod, .sticky-bottom .navbar .container-lg .prod, .sticky-bottom .navbar .container-xl .prod, .sticky-bottom .navbar .container-xxl .prod {
-  color: white; }
+  color: white;
+  font-size: 10px; }
 
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
