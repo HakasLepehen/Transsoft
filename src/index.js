@@ -20,31 +20,49 @@ import 'bootstrap';
 import '@popperjs/core';
 import DG from '2gis-maps';
 
-let map = DG.map('map', {
-    'center': [55.022912, 73.263413],
-    'zoom': 17
-})
+function scroll(element) {
 
-DG.marker([55.023075, 73.2628]).addTo(map);
+    const nav = document.querySelector('.navigation')
+        .getBoundingClientRect().height;
 
-// const a = document.querySelectorAll('a[href*="#"]:not([href="#"])');
-// a.forEach((el) => {
-//     el.addEventListener('click', function (e) {
-//
-//         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
-//             || location.hostname === this.hostname) {
-//
-//             let target = $(this.hash);
-//             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-//             if (target.length) {
-//                 e.preventDefault();
-//                 $('html,body').animate({
-//                     scrollTop: target.offset().top
-//                 }, 500);
-//                 return false;
-//             }
-//         }
-//     })
-// })
+    window.scrollTo({
+        top: element.offsetTop - nav,
+        behavior: 'smooth'
+    });
+}
+
+const addressBtn = document.querySelector('.map-marker');
+
+addressBtn.addEventListener('click', evt => {
+    let mapElement = document.getElementById('map');
+    mapElement.style.height = 400 + 'px';
+
+    let map = DG.map('map', {
+        'center': [55.022912, 73.263413],
+        'zoom': 17
+    })
+
+    DG.marker([55.023075, 73.2628]).addTo(map);
+
+    scroll(mapElement);
+});
+
+document.querySelectorAll('.nav-item')
+    .forEach(element => {
+       element.addEventListener('click', evt => {
+           evt.preventDefault();
+
+           const id = evt.target.getAttribute('href').replace('#', '');
+           const section = document.getElementById(id);
+
+           scroll(section);
+       })
+    });
+
+const love = document.querySelector('.prod');
+
+const home = document.querySelector('.main-title');
+
+love.addEventListener('click', e => scroll(home));
 
 
