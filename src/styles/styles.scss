@@ -47,10 +47,16 @@ h2 {
 
 section {
   margin-top: 30px;
+  opacity: 0;
 
   &:nth-of-type(2n) {
     background-color: $milk;
   }
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 2s ease-in;
 }
 
 //Навигационная панель

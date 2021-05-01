@@ -35,16 +35,26 @@ const addressBtn = document.querySelector('.map-marker');
 
 addressBtn.addEventListener('click', evt => {
     let mapElement = document.getElementById('map');
-    mapElement.style.height = 400 + 'px';
+    if (!mapElement.style.height) {
+        mapElement.style.height = 400 + 'px';
 
-    let map = DG.map('map', {
-        'center': [55.022912, 73.263413],
-        'zoom': 17
-    })
+        let map = DG.map('map', {
+            'center': [55.022912, 73.263413],
+            'zoom': 17
+        })
 
-    DG.marker([55.023075, 73.2628]).addTo(map);
+        let popup = DG.popup()
+            .setLatLng([55.023075, 73.2628])
+            .setContent('<p>Офис компании</p>')
+            .openOn(map);
 
-    scroll(mapElement);
+        scroll(mapElement);
+    } else {
+        mapElement.style.height = '';
+    }
+
+
+
 });
 
 document.querySelectorAll('.nav-item')
