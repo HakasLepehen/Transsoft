@@ -47,16 +47,19 @@ h2 {
 
 section {
   margin-top: 30px;
-  opacity: 0;
 
   &:nth-of-type(2n) {
     background-color: $milk;
   }
 }
 
+.hide {
+  opacity: 0;
+}
+
 .show {
   opacity: 1;
-  transition: opacity 2s ease-in;
+  transition: opacity 0.5s ease-in;
 }
 
 //Навигационная панель
@@ -96,6 +99,12 @@ section {
               font-weight: 900;
               font-size: 1.2rem;
             }
+          }
+
+          .active {
+            color: $blue-custom;
+              font-weight: 900;
+              font-size: 1.2rem;
           }
         }
       }
